@@ -6,8 +6,10 @@
 	"author": "Thidasa Pankaja Paranavitharana",
 	"license": "MIT",
 	"dependencies": {
+		"chalk": "^2.4.2",
+		"figlet": "^1.2.3",
 		"inquirer": "^6.3.1",
-		"markdown-it": "^8.4.2"
+		"ora": "^3.4.0"
 	},
 	"scripts": {
 		"dev": "node generate.js"
