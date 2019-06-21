@@ -34,6 +34,7 @@ const generateReadMe =(answers) => {
         }
         if(answers.installation_commands !== ''){
             let installation_commands_arr = answers.installation_commands.split(',');
+            installation +='```\n'
             for (let i=0;i<installation_commands_arr.length;i++){
                 installation += `${installation_commands_arr[i].trim()}\n`;
             }
@@ -56,10 +57,12 @@ const generateReadMe =(answers) => {
         let author_arr = answers.author.split(",");
         if(author_arr[0] !== '')
             author += `- ${author_arr[0]}\n`;
-        if(author_arr[0] !== '')
+        if(author_arr[1] !== '')
             author += `- [Twitter](https://twitter.com/${author_arr[1].trim()})\n`;
-        if(author_arr[0] !== '')
+        if(author_arr[2] !== '')
             author += `- [Github](https://github.com/${author_arr[2].trim()})\n`;
+
+        author +='\n';
     }
     else {
         author = ''
@@ -68,7 +71,7 @@ const generateReadMe =(answers) => {
     if(answers.license !== ''){
         let license_string = answers.license.split(",");
         license = `## License\n`
-        license = `This project is under [${license_string[0]}(${license_string[1].trim()})]\n`;
+        license = `This project is under [${license_string[0]}](${license_string[1].trim()})\n licenses`;
     }
 
     return project_name + project_description + project_homepage + prerequisites + installation + techStack + author + license;

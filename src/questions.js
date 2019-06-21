@@ -21,28 +21,28 @@ const questions = [
     {
         type: 'input',
         name: 'prerequisites',
-        message: "Prerequisites-optional : "
+        message: "1️⃣  Prerequisites-optional : "
     },
     {
         type: 'input',
         name: 'installing',
-        message: "Installation details-optional : "
+        message: "🖥️  Installation details-optional : "
     },
     {
         type: 'input',
         name: 'installation_commands',
-        message: "Installation commands (commands to run with seperated comma)-optional : "
+        message: "💿  Installation commands (commands to run with seperated comma)-optional : "
     },
     {
         type: 'input',
         name: 'built_with',
         message: "⚙️  Built With (technologies with seperated comma)-optional : "
     },
-    {
-        type: 'input',
-        name: 'contributing',
-        message: "🤝  Contributing details-optional : "
-    },
+    // {
+    //     type: 'input',
+    //     name: 'contributing',
+    //     message: "🤝  Contributing details-optional : "
+    // },
     {
         type: 'input',
         name: 'author',
@@ -51,7 +51,7 @@ const questions = [
     {
         type: 'input',
         name: 'license',
-        message: "License (name and url with seperated comma)-optional : "
+        message: "©️  License (name and url with seperated comma)-optional : "
     },
 ]
 

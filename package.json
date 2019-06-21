@@ -2,9 +2,12 @@
 	"name": "easyreadme",
 	"version": "1.0.0",
 	"description": "Easy Readme generator",
-	"main": "index.js",
+	"main": "generate.js",
 	"author": "Thidasa Pankaja Paranavitharana",
 	"license": "MIT",
+	"bin": {
+		"generate": "generate.js"
+	},
 	"dependencies": {
 		"chalk": "^2.4.2",
 		"figlet": "^1.2.3",
