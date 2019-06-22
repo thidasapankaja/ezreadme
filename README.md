@@ -1,5 +1,5 @@
 # ezreadme
-Easiest way to generate a simple README for your projects
+Easiest way to generate a simple README for your project
 #### [Homepage](https://github.com/thidasapankaja/ezreadme)
 #### Prerequisites
  ``` 

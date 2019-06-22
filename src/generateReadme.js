@@ -28,7 +28,6 @@ const generateReadMe =(answers) => {
         installation = `#### Installation\n`;
         if(answers.installing !== ''){
             installation += `${answers.installing}\n`;
-            console.log(installation);
         }
         else {
             installation += `Run the following commands to get started\n`;
@@ -48,7 +47,6 @@ const generateReadMe =(answers) => {
                     yarn == 0 ? installation +=`\n// using yarn\n`: '';
                     yarn = 1;
                 }
-                console.log(installation_commands_arr[i]);
                 installation += `${installation_commands_arr[i].trim()}\n`;
             }
             installation += '```\n';
