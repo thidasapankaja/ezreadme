@@ -21,12 +21,12 @@ const questions = [
     {
         type: 'input',
         name: 'prerequisites',
-        message: "1️⃣  Prerequisites-optional : "
+        message: "1️⃣   Prerequisites-optional : "
     },
     {
         type: 'input',
         name: 'installing',
-        message: "🖥️  Installation details-optional : "
+        message: "🖥️   Installation details-optional : "
     },
     {
         type: 'input',
@@ -41,7 +41,7 @@ const questions = [
     {
         type: 'input',
         name: 'built_with',
-        message: "⚙️  Built With (technologies with seperated comma)-optional : "
+        message: "⚙️   Built With (technologies with seperated comma)-optional : "
     },
     // {
     //     type: 'input',
@@ -56,7 +56,7 @@ const questions = [
     {
         type: 'input',
         name: 'license',
-        message: "©️  License (name and url with seperated comma)-optional : "
+        message: "©️   License (name and url with seperated comma)-optional : "
     },
 ]
 
