@@ -6,7 +6,7 @@
 	"author": "Thidasa Pankaja Paranavitharana",
 	"license": "MIT",
 	"bin": {
-		"generate": "generate.js"
+		"easy-generate": "generate.js"
 	},
 	"dependencies": {
 		"chalk": "^2.4.2",

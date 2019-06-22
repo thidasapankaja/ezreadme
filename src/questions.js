@@ -35,6 +35,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'usage_commands',
+        message: "💻  Usage-optional : "
+    },
+    {
+        type: 'input',
         name: 'built_with',
         message: "⚙️  Built With (technologies with seperated comma)-optional : "
     },

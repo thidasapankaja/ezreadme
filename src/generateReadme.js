@@ -8,6 +8,7 @@ const generateReadMe =(answers) => {
     let license = '';
     let prerequisites = '';
     let installation = '';
+    let usage = '';
     let techStack = '';
     
     if(answers.project_homepage !== ''){
@@ -34,11 +35,46 @@ const generateReadMe =(answers) => {
         }
         if(answers.installation_commands !== ''){
             let installation_commands_arr = answers.installation_commands.split(',');
-            installation +='```\n'
+            let yarn = 0;
+            let npm = 0;
+            installation +='```'
             for (let i=0;i<installation_commands_arr.length;i++){
+
+                if(installation_commands_arr[i].includes('npm')){
+                    npm == 0 ? installation +=`\n// using npm\n` : '';
+                    npm = 1;
+                }
+                else if(installation_commands_arr[i].includes('yarn')){
+                    yarn == 0 ? installation +=`\n// using yarn\n`: '';
+                    yarn = 1;
+                }
+                console.log(installation_commands_arr[i]);
                 installation += `${installation_commands_arr[i].trim()}\n`;
             }
             installation += '```\n';
+        }
+    }
+
+    if(answers.usage_commands !== '' || answers.usage_commands !== ''){
+        usage = `#### Usage\n`;
+        if(answers.usage_commands !== ''){
+            let usage_commands_arr = answers.usage_commands.split(',');
+            let yarn = 0;
+            let npm = 0;
+            usage +='```\n'
+            for (let i=0;i<usage_commands_arr.length;i++){
+
+                if(usage_commands_arr[i].includes('npm')){
+                    npm == 0 ? usage +=`\n// using npm\n` : '';
+                    npm = 1;
+                }
+                else if(usage_commands_arr[i].includes('yarn')){
+                    yarn == 0 ? usage +=`\n// using yarn\n`: '';
+                    yarn = 1;
+                }
+                usage += `${usage_commands_arr[i].trim()}\n`;
+            }
+            usage += '```\n';
         }
     }
 
@@ -71,10 +107,12 @@ const generateReadMe =(answers) => {
     if(answers.license !== ''){
         let license_string = answers.license.split(",");
         license = `## License\n`
-        license = `This project is under [${license_string[0]}](${license_string[1].trim()})\n licenses`;
+        license += `This project is under [${license_string[0]}](${license_string[1].trim()}) license \n\n`;
     }
 
-    return project_name + project_description + project_homepage + prerequisites + installation + techStack + author + license;
+    let credits = `---\n> This README is generated from [easyREADME](https://github.com/thidasapankaja/easyREADME).`
+
+    return project_name + project_description + project_homepage + prerequisites + installation + usage + techStack + author + license + credits;
 };
 
 module.exports = {
