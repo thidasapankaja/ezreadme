@@ -1,6 +1,8 @@
 # ezreadme
 
-Easiest way to generate a simple README for your project
+Easiest way to generate a simple README for your projects
+
+#### [Homepage](https://github.com/thidasapankaja/ezreadme)
 
 #### Prerequisites
 
@@ -26,18 +28,6 @@ yarn add ezreadme
 generate-readme
 ```
 
-#### How to
-
-![How to](https://i.imgur.com/CdkCDtO.png)
-
-##### Todo list
-
-- [x] Publish the usable version
-- [x] Add generated sample README
-- [ ] Add png support
-- [ ] Add gif support
-- [ ] Add multiple README types selecions
-
 #### Built with
 
 - Nodejs
@@ -48,6 +38,10 @@ generate-readme
 - [Twitter](https://twitter.com/thidasapankaja)
 - [Github](https://github.com/thidasapankaja)
 
-#### License
+## License
 
 This project is under [MIT](https://github.com/thidasapankaja/ezreadme/blob/master/LICENSE) license
+
+---
+
+> This README is generated from [ezreadme](https://github.com/thidasapankaja/ezreadme).

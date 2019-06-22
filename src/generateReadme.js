@@ -104,7 +104,7 @@ const generateReadMe =(answers) => {
 
     if(answers.license !== ''){
         let license_string = answers.license.split(",");
-        license = `## License\n`
+        license = `#### License\n`
         license += `This project is under [${license_string[0]}](${license_string[1].trim()}) license \n\n`;
     }
 
