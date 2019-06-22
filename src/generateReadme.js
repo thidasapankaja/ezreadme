@@ -110,7 +110,7 @@ const generateReadMe =(answers) => {
         license += `This project is under [${license_string[0]}](${license_string[1].trim()}) license \n\n`;
     }
 
-    let credits = `---\n> This README is generated from [easyREADME](https://github.com/thidasapankaja/easyREADME).`
+    let credits = `---\n> This README is generated from [ezreadme](https://github.com/thidasapankaja/ezreadme).`
 
     return project_name + project_description + project_homepage + prerequisites + installation + usage + techStack + author + license + credits;
 };

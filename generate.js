@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const { prompt } = require('inquirer');
 const ora = require('ora');
@@ -10,7 +12,7 @@ const { generateReadMe } = require('./src/generateReadme');
 const init = () => {
     console.log(
       chalk.green(
-        figlet.textSync("easyREADME", {
+        figlet.textSync("ezreadme", {
           horizontalLayout: "default",
           verticalLayout: "default"
         })
