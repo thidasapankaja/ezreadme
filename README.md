@@ -29,6 +29,7 @@ generate-readme
 #### How to
 
 ![How to](https://i.imgur.com/CdkCDtO.png)
+**Checkout the generated READMEs [here](https://github.com/thidasapankaja/ezreadme/tree/master/samples)**
 
 ##### Todo list
 

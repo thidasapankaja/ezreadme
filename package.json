@@ -1,6 +1,6 @@
 {
 	"name": "ezreadme",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "Easy Readme generator",
 	"main": "generate.js",
 	"author": "Thidasa Pankaja Paranavitharana",
